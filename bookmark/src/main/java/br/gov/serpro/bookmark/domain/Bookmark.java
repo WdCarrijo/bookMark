@@ -8,6 +8,11 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.NotBlank;
+import org.hibernate.validator.constraints.URL;
 
 @Entity
 public class Bookmark implements Serializable {
@@ -22,9 +27,15 @@ public class Bookmark implements Serializable {
 	private Long id;
 	
 	@Column
+	@NotNull
+	@Size(min = 1, max = 30)
 	private String description;
 	
 	@Column
+	@NotNull
+	@NotBlank // não branco
+	@Size(max = 255)
+	@URL	
 	private String link;
 	
 	public Bookmark() {

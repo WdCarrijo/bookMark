@@ -50,5 +50,10 @@
 			<artifactId>slf4j-log4j12</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validador</artifactId>
+			<version>4.3.0.Final</version>		
+		</dependency>		
 	</dependencies>
 </project>
