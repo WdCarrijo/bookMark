@@ -1,5 +1,6 @@
 package br.gov.serpro.bookmark.security;
 
+import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
 
 import br.gov.frameworkdemoiselle.security.AuthenticationException;
@@ -7,6 +8,7 @@ import br.gov.frameworkdemoiselle.security.Authenticator;
 import br.gov.frameworkdemoiselle.security.User;
 import br.gov.frameworkdemoiselle.util.ResourceBundle;
 
+@SessionScoped
 public class Autenticacao implements Authenticator {
 	private static final long serialVersionUID = 1L;
 
