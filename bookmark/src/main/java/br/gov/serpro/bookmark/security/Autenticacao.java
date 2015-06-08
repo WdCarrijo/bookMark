@@ -36,6 +36,7 @@ public class Autenticacao implements Authenticator {
 
 	@Override
 	public void unauthenticate() throws Exception {
+		autenticado = false;
 		credentials.clear();
 	}
 

@@ -4,10 +4,10 @@ import javax.inject.Inject;
 
 import br.gov.frameworkdemoiselle.annotation.NextView;
 import br.gov.frameworkdemoiselle.message.MessageContext;
-import br.gov.frameworkdemoiselle.security.Credentials;
 import br.gov.frameworkdemoiselle.security.SecurityContext;
 import br.gov.frameworkdemoiselle.stereotype.ViewController;
 import br.gov.frameworkdemoiselle.template.AbstractPageBean;
+import br.gov.serpro.bookmark.security.Credentials;
 
 @ViewController
 @NextView("./index.jsf")

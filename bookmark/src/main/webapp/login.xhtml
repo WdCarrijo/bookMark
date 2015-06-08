@@ -18,10 +18,10 @@
 					<p:inputText id="login" style="margin-right:10px"
 						value="#{loginMB.usuario}" required="true"/>
 					<p:outputLabel for="senha" value="Senha: " />
-					<p:inputText id="senha" style="margin-right:10px"
+					<h:inputSecret id="senha" style="margin-right:10px"
 						value="#{loginMB.senha}" required="true"/>
 					<p:commandButton value="Login" icon="ui-icon-locked"
-						action="#{loginMB.doLogin()}" />
+						actionListener="#{loginMB.doLogin }" update="messages" />
 				</f:facet>
 			</p:menubar>
 		</h:form>
